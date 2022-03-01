@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Sistema de Ludibriação</h2>
+Velocidade da Ludibriação<input type="number" name="txtvel" id="txtvel" placeholder="DIGITE UM NUMERO">Km/h
+<input type="button" id="verificar" value="verificar" onclick="calcular()" >
+<div id="res"></div>
+    <script >
+var txtvel=document.querySelector('#txtvel')
+var res = document.querySelector('#res')
+
+txtvel.addEventListener("keyup", function(event) {
+         if (event.keyCode === 13) {
+            
+            calcular()
+           //  document.getElementById("verificar").click();
+
+        }
+    });
+
+function calcular(){
+    if(txtvel.value==""||txtvel.value<0){alert('digite um valor maior que 0')
+    res.innerHTML=(`<strong>Digite algo valido sua anta </strong>`)
+}
+    else if(txtvel.value>=60 && txtvel.value<100 ){
+        
+        res.innerHTML=(`Sua velocidade atual <strong>${txtvel.value}Km/h</strong></br>voce foi LUDIBRIADO`)
+        
+    }
+    else if(txtvel.value>=100){res.innerHTML=(`Sua velocidade atual <strong>${txtvel.value}Km/h</strong></br><strong>LUDIBRIAÇÃO ESTA NO MAXIMO </br>3<br>2<br>1<br>você morreu</strong>`)}
+    else{ res.innerHTML=(`Sua velocidade atual <strong>${txtvel.value}Km/h</strong></br>voce ESTA SAFE`)
+}
+}
+
+
+
+    </script>
+</body>
+</html>
