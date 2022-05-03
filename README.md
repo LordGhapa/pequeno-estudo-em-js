@@ -5,4 +5,4 @@ https://lordghapa.github.io/pequeno-estudo-em-js/4/10
 
 
 https://lordghapa.github.io/pequeno-estudo-em-js/calculadora/
-calculadora não finalizada falta ativa o teclado , %  e  botoes relacionados a memoria 
+calculadora não finalizada falta ativa o  , %  e  botoes relacionados a memoria 
